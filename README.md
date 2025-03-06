@@ -79,7 +79,7 @@ Total Amount
 Discount Applied
 Final Payable Amount
 
-6.Multiple Transactions:
+6.Multiple Transactions
 
 &#8226; The program can handle consecutive customers in a single run, asking after each receipt whether there is another customer in the queue.
 
