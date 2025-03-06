@@ -1,14 +1,72 @@
 # Super-Market-Billing-System
-Design and implement a supermarket billing system using Python that effectively handles multiple billing functionalities. The system should allow for the input of multiple items, process their individual prices, and apply discounts where applicable. Using conditional statements and loops, the program should calculate the total bill, including any applicable discounts, and generate an itemized receipt for the customer. The system should be interactive and capable of handling real-time input, ensuring accuracy and clarity in the final output.
- 
-Key Requirements:
 
-1.The system must allow for multiple items to be processed in a single transaction.
+# Project Overview
+The Supermarket Billing System is a Python-based application designed to streamline the billing process in a supermarket. It allows adding multiple items to a cart, calculates the total price, applies discounts based on the total amount, and generates a detailed itemized receipt for the customer.
+This project aims to create a simple yet efficient billing system suitable for small supermarkets and retail stores.
 
-2.Conditional statements should be used to apply discounts based on criteria (e.g., total amount, item type, or promotions).
+Features
+&#8226; Multiple Item Processing:
+Customers can add multiple items along with their quantities in a single transaction.
 
-3.The program should calculate and display the subtotal, any discounts applied, and the final total amount due.
+&#8226; Discount Application:
+Automatic discount based on the total bill amount:
 
-4.The itemized bill should display the name, quantity, price of each item, and the final total after discounts.
+5% discount for totals up to ₹500
+10% discount for totals up to ₹1000
+15% discount for totals up to ₹3000
+20% discount for totals above ₹3000
 
-5.Loops should be utilized to handle continuous input of items until the billing process is complete.
+&#8226; Itemized Receipt:
+A clear receipt is generated that includes:
+
+Each product’s name, price, and quantity
+Total amount before discount
+Discount applied
+Final payable amount
+
+&#8226; Customer Information Capture:
+The system asks for the customer’s name and phone number to be printed on the receipt.
+
+&#8226; Continuous Processing:
+After each transaction, the system asks if there’s another customer, enabling continuous transactions without restarting the program.
+
+ # How It Works
+1.Customer Information
+The system prompts for the customer's name and phone number.
+
+2.Product List Display
+A list of available products and prices is shown.
+
+3.Item Selection
+The customer can enter:
+
+Product Name
+Quantity
+The system calculates the subtotal for each item and adds it to the cart.
+
+4.Discount Calculation
+The following discounts apply based on the total bill:
+
+0% discount for amounts below ₹500
+5% discount for amounts up to ₹1000
+10% discount for amounts up to ₹3000
+15% discount for amounts above ₹3000
+
+5.Receipt Generation
+After item selection is complete, the system generates a neat receipt containing:
+
+Store Header
+Date and Time (can be added with datetime if desired)
+Customer Name and Phone Number
+Each Item’s Price, Quantity, and Subtotal
+Total Amount
+Discount Applied
+Final Payable Amount
+
+6.Multiple Transactions:
+
+The program can handle consecutive customers in a single run, asking after each receipt whether there is another customer in the queue.
+
+# Technologies Used
+Python 3.x for the core logic and implementation.
+Datetime Module for generating the current date and time on receipts.
